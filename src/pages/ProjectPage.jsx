@@ -104,22 +104,22 @@ export default function ProjectPage() {
       />
 
       <main className="relative z-10">
-        {/* Hero */}
-        <section className="relative min-h-[50vh] flex flex-col justify-end">
-          <div className="absolute inset-0">
-            {project.heroImage ? (
+        {/* Hero with image */}
+        <section className="relative min-h-[60vh] flex flex-col justify-end">
+          <div className="absolute inset-0 bg-gradient-to-br from-[#161B22] via-[#0D1117] to-[#161B22]">
+            {(project.heroImage || project.screenshots?.[0]?.src) && (
               <img
-                src={project.heroImage}
+                src={project.heroImage || project.screenshots?.[0]?.src}
                 alt=""
-                className="w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full object-cover"
                 onError={(e) => {
                   e.target.style.display = 'none';
                 }}
               />
-            ) : null}
+            )}
             <div
-              className="absolute inset-0 bg-gradient-to-t from-[#0D1117] via-[#0D1117]/80 to-[#0D1117]/40"
-              style={project.heroImage ? {} : { background: 'linear-gradient(135deg, #161B22 0%, #0D1117 100%)' }}
+              className="absolute inset-0 bg-gradient-to-t from-[#0D1117] via-[#0D1117]/70 to-[#0D1117]/30"
+              aria-hidden
             />
           </div>
 

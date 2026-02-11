@@ -14,7 +14,8 @@ import {
   ExternalLink,
   Briefcase,
   Phone,
-  MessageCircle
+  MessageCircle,
+  Palette
 } from 'lucide-react';
 import Navbar from './components/Navbar';
 import { projects } from './data/projects';
@@ -267,13 +268,13 @@ export default function App() {
             
             <div className="max-w-3xl">
               <ExperienceItem 
-                role="Founder & Principal Software Engineer"
+                role="Principal Software Engineer"
                 company="Nâcham Technology and Solutions"
                 date="2023 – Present"
                 desc="Spearheaded engineering strategy and product roadmaps. Architected high-traffic ERP solutions with 99.9% uptime. Led development of cross-platform mobile apps (Flutter) and reactive web dashboards."
               />
               <ExperienceItem 
-                role="Lead Visualization Specialist & Founder"
+                role="Lead Visualization Specialist"
                 company="Visual Graphics Illustration Services (VGIS)"
                 date="2019 – Present"
                 desc="Pioneered the transition into digital visualization. Led end-to-end delivery of AR/VR Real Estate Suites using Unreal Engine 5. Integrated AI workflows to reduce turnaround time by 30%."
@@ -312,34 +313,55 @@ export default function App() {
                 <p className="text-[#8B949E] text-lg">
                     Whether it's complex distributed systems or high-fidelity immersive experiences, I am ready to engineer the solution.
                 </p>
-                <div className="flex flex-wrap justify-center gap-6 pt-4">
-                    <a href="mailto:ebubzy1997@gmail.com" className="flex items-center gap-2 text-[#58A6FF] hover:underline hover:text-white transition-colors">
-                        <Mail size={20} /> ebubzy1997@gmail.com
-                    </a>
-                    <a href="tel:+2347072475996" className="flex items-center gap-2 text-[#8B949E] hover:text-white transition-colors">
-                        <Phone size={20} /> +234 707 247 5996
-                    </a>
-                    <a href="https://wa.me/2348112853404" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#8B949E] hover:text-white transition-colors">
-                        <MessageCircle size={20} /> WhatsApp
-                    </a>
-                    <a href="https://www.linkedin.com/in/precious-ebubechukwu-chikezie/" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#8B949E] hover:text-white transition-colors">
-                        <Linkedin size={20} /> LinkedIn
-                    </a>
-                    <a href="https://github.com/Mass0Shifter" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#8B949E] hover:text-white transition-colors">
-                        <Github size={20} /> GitHub
-                    </a>
-                    <a href="https://web.facebook.com/the.revivalist.gkni/" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#8B949E] hover:text-white transition-colors">
-                        Facebook
-                    </a>
-                    <a href="https://www.instagram.com/the_revivalist_gkni" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#8B949E] hover:text-white transition-colors">
-                        Instagram
-                    </a>
-                    <a href="https://x.com/M_0_S_1997" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#8B949E] hover:text-white transition-colors">
-                        X
-                    </a>
-                    <span className="flex items-center gap-2 text-[#8B949E]">
-                        Battle.net: Mass0Shifter#2877
-                    </span>
+                <div className="space-y-8 pt-4">
+                    <div>
+                        <p className="text-[#8B949E] font-mono text-xs uppercase tracking-widest mb-3">Reach out</p>
+                        <div className="flex flex-wrap justify-center gap-6">
+                            <a href="mailto:ebubzy1997@gmail.com" className="flex items-center gap-2 text-[#58A6FF] hover:underline hover:text-white transition-colors">
+                                <Mail size={20} /> ebubzy1997@gmail.com
+                            </a>
+                            <a href="tel:+2347072475996" className="flex items-center gap-2 text-[#8B949E] hover:text-white transition-colors">
+                                <Phone size={20} /> +234 707 247 5996
+                            </a>
+                            <a href="https://wa.me/2348112853404" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#8B949E] hover:text-white transition-colors">
+                                <MessageCircle size={20} /> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <p className="text-[#8B949E] font-mono text-xs uppercase tracking-widest mb-3">Work & portfolio</p>
+                        <div className="flex flex-wrap justify-center gap-6">
+                            <a href="https://www.linkedin.com/in/precious-ebubechukwu-chikezie/" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#8B949E] hover:text-white transition-colors">
+                                <Linkedin size={20} /> LinkedIn
+                            </a>
+                            <a href="https://github.com/Mass0Shifter" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#8B949E] hover:text-white transition-colors">
+                                <Github size={20} /> GitHub
+                            </a>
+                            <a href="https://www.behance.net/ebubzy1997" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#8B949E] hover:text-white transition-colors">
+                                <Palette size={20} /> Behance
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <p className="text-[#8B949E] font-mono text-xs uppercase tracking-widest mb-3">Social</p>
+                        <div className="flex flex-wrap justify-center gap-6">
+                            <a href="https://web.facebook.com/the.revivalist.gkni/" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#8B949E] hover:text-white transition-colors">
+                                Facebook
+                            </a>
+                            <a href="https://www.instagram.com/the_revivalist_gkni" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#8B949E] hover:text-white transition-colors">
+                                Instagram
+                            </a>
+                            <a href="https://x.com/M_0_S_1997" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#8B949E] hover:text-white transition-colors">
+                                X
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <p className="text-[#8B949E] font-mono text-xs uppercase tracking-widest mb-3">Gaming</p>
+                        <span className="flex items-center justify-center gap-2 text-[#8B949E]">
+                            Battle.net: Mass0Shifter#2877
+                        </span>
+                    </div>
                 </div>
                 <div className="pt-20 text-sm text-[#484F58] font-mono">
                     <p>© 2026 Precious Ebubechukwu Chikezie. All rights reserved.</p>
