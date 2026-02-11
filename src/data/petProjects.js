@@ -1,0 +1,86 @@
+/**
+ * Pet projects from the legacy portfolio.
+ * Links assume the old portfolio is copied into /public/pet-projects.
+ */
+export const petProjects = [
+  {
+    id: "memory-game",
+    title: "Memory Game Project",
+    summary: "Classic card-matching memory game built for the web.",
+    date: "2016",
+    href: "/pet-projects/memory-game-master/index.html",
+    thumbnail: "/pet-projects/memory-game-master/img/geometry2.png",
+  },
+  {
+    id: "arcade-game",
+    title: "Arcade Game Project",
+    summary: "Simple arcade-style game with keyboard controls.",
+    date: "2016",
+    href: "/pet-projects/arcade-game-master/index.html",
+    thumbnail: "/pet-projects/arcade-game-master/images/char-boy.png",
+  },
+  {
+    id: "google-maps",
+    title: "Google Maps API Test Project",
+    summary: "Exploration of Google Maps APIs and custom markers.",
+    date: "2016",
+    href: "/pet-projects/Main%20Map%20Project/index.html",
+    thumbnail: "/pet-projects/REMA/assets/img/example-image.jpg",
+  },
+  {
+    id: "words-arranger",
+    title: "Words Arranger",
+    summary: "Text arrangement tool for word play and layout experiments.",
+    date: "2018",
+    href: "/pet-projects/words/index.html",
+    thumbnail: "/pet-projects/words/assets/Img/check.png",
+  },
+  {
+    id: "technical-roster",
+    title: "Technical Crew Duty Roster",
+    summary: "Scheduling and duty roster tool for technical teams.",
+    date: "2016-2017",
+    href: "/pet-projects/Technical%20Roster/index.html",
+    thumbnail: "/pet-projects/REMA/assets/img/example-image.jpg",
+  },
+  {
+    id: "sketchfab-test",
+    title: "Sketch Fab Testing Grounds",
+    summary: "Experiments with Sketchfab embeds and 3D previews.",
+    date: "2020",
+    href: "/pet-projects/SketchFabTest.html",
+    thumbnail: "/pet-projects/REMA/assets/img/example-image.jpg",
+  },
+  {
+    id: "pual",
+    title: "Pual",
+    summary: "Small experimental project from early portfolio work.",
+    date: "",
+    href: "/pet-projects/REMA/index.html",
+    thumbnail: "/pet-projects/REMA/assets/img/REMA_0.png",
+  },
+  {
+    id: "svg-coord",
+    title: "SVG",
+    summary: "Surveying & geoinformatics calculator for land area using cross coordinate, double departure, and double latitude methods.",
+    date: "2021",
+    href: "/pet-projects/svg-coord/index.html",
+    thumbnail: "/pet-projects/REMA/assets/img/example-image.jpg",
+  },
+  {
+    id: "bible-plan",
+    title: "Bible Plan Generator",
+    summary: "Generate reading plans with date ranges and outputs.",
+    date: "2022",
+    href: "/pet-projects/bible-project/index.html",
+    thumbnail: "/pet-projects/REMA/assets/img/example-image.jpg",
+  },
+  {
+    id: "feed-reader",
+    title: "Feed Reader",
+    summary: "RSS feed reader with testing setup (Jasmine).",
+    date: "2018",
+    href: "/pet-projects/feedreader-master-v2/index.html",
+    thumbnail: "/pet-projects/feedreader-master-v2/jasmine/lib/jasmine-2.1.2/jasmine_favicon.png",
+  },
+];

@@ -81,7 +81,7 @@ export const projects = [
       { src: "/projects/skyframe-3.png", caption: "Estate masterplan projection" },
       { src: "/projects/skyframe-4.png", caption: "Customization and visualization in AR" },
     ],
-    tech: ["Unreal Engine 5", "ARO/VRO", "ARCore", "C#", "Blender", "SketchUp Pro", "Meta Quest"],
+    tech: ["Unreal Engine 5", "ARO/VRO", "ARCore", "C++", "Blender", "SketchUp Pro", "Meta Quest"],
     client: null,
     hostCompany: "VGIS (3DVGIS)",
     liveUrl: "https://skyframexr.3dvgis.com/",

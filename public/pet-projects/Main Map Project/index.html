@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lovetts Map project</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	</head>
+
+	<body class="bg-info">
+	<header>
+		<nav class="navbar navbar-inverse navbar-fixed-bottom">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <a class="navbar-brand" href="mass0shifter.github.io">Zer0's Page</a>
+			</div>
+			<div>
+			  <ul class="nav navbar-nav">
+				<li><a href="../memory-game-master/index.html">Memory Game Project</a></li>
+				<li><a href="../arcade-game-master/index.html">Arcade Game Project</a></li> 
+				<li   class="active"><a href="#">Google Maps Api Test Project</a></li> 
+				<li><a href="../words/index.html">Words Arranger</a></li> 
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+	</header>
+		<div class="text-center">
+			<h3>Welcome To My Neighborhood Map Project</h3>
+		</div>
+		<div id="main_div" class="container-fluid">
+			
+			<div id="topbar" class="row">
+				<div class="col-xs-12 input-group">
+					<span class="input-group-addon">Search Filter</span>
+					<input class="form-control" type="text" id="filter-search" placeholder="Search Filter" data-bind="textInput: searchItem, valueUpdate: 'afterkeydown'"><!--data-bind="event: { keyup: searchFilter }"-->
+					<div class="input-group-btn">
+					<button id="filter-btn" class="btn btn-default btn-success"><i class="glyphicon glyphicon-search"></i></button>
+				  </div>
+				</div>
+			</div>
+		</div>
+		<button id="btn-hsm" class="btn btn-default btn-primary" data-bind="click: hideShowMenu">
+			<i class="glyphicon glyphicon-menu-hamburger"></i>
+		</button>
+		<div id="filter-menu" data-bind="visible: menuVisible">
+			
+			<ul id="placelist" class="list-group" data-bind="foreach: locationList">
+				<li class="list-group-item btn places" data-bind="text: title, click: show">Places is loading...</li>
+			</ul>
+		</div>
+		<div id="map" ></div>
+	</body>
+	
+	<!-- JS Files START  -->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="utils/knockout-3.5.0rc.js"></script>
+	<script src="js/model.js"></script>
+	<script src="js/main.js"></script>
+	<script async defer onerror="googleRequestError()" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7936rM_4Qr_OFTvg0ldosKBUw_wF0vCc&v=3&callback=startMap">
+   	</script>
+	
+	<!-- JS Files END-->
+</html>

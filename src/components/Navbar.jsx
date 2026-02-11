@@ -6,6 +6,7 @@ const navLinks = [
   { href: '/#about', label: '_about' },
   { href: '/#stack', label: '_stack' },
   { href: '/#projects', label: '_projects' },
+  { href: '/pet-projects', label: '_pet' },
   { href: '/#experience', label: '_experience' },
   { href: '/#contact', label: '_contact', cta: true },
 ];

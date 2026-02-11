@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sketch Fab Test</title>
+</head>
+
+<body>
+	<div>
+		<iframe src="" id="api-frame" allowfullscreen="true" webkitallowfullscreen="true" width="500px" height="300px"></iframe>
+		
+		<div class="buttons">
+            <button id="blueButton">White Avenue Logo</button>
+            <button id="orangeButton">My House Model</button>
+        </div>
+	</div>
+	<script src="https://static.sketchfab.com/api/sketchfab-viewer-1.0.0.js"></script>
+	
+	<script>
+		var iframe = document.getElementById("api-frame"),
+			version = "1.0.0",
+			whiteAvenueLogo = "8d87fee43c2f45b087fee106ff8da3f4",
+			momsPlace = "b0d089fb755e49da8872764db3176ada",
+			client = new Sketchfab(version, iframe),
+			blueButton = document.getElementById( 'blueButton' ),
+            orangeButton = document.getElementById( 'orangeButton' ),
+			error = function(){console.log("Viewer error");},
+			success = function(api){api.start();};
+		
+		function loadModel(client, model){
+		console.log("Viewer error");
+			client.init(model, {
+				success: success,
+				error: error,
+				autospin:0.5
+			});
+		}
+		
+		// Listen for click events on the buttons
+        blueButton.addEventListener( 'click', function() {
+            loadModel( client, whiteAvenueLogo );
+        });
+        orangeButton.addEventListener( 'click', function() {
+            loadModel( client, momsPlace );
+        });
+	</script>
+	
+</body>
+</html>
