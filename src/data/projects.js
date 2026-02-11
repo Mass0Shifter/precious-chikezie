@@ -8,7 +8,7 @@ export const projects = [
     id: "mining-tax",
     title: "Mining Transport Tax Application",
     tagline: "Secure revenue collection for mining logistics",
-    status: "Live",
+    status: "Demo (Beta)",
     overview: "A secure revenue collection system for the mining logistics sector. Features a responsive dashboard for tax administrators and robust API for transaction logging. Significantly reduced revenue leakage.",
     problem: "The mining sector struggled with revenue leakage and manual tracking of transport-related taxes. Multiple stakeholders needed a transparent, auditable system that could handle high transaction volumes.",
     solution: "We built an integrated platform with a React-based admin dashboard for real-time oversight and a REST API for transaction logging. The system connects tax administrators, logistics operators, and auditors in a single workflow with role-based access and audit trails.",
