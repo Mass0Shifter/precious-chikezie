@@ -8,6 +8,7 @@ import {
   Smartphone, 
   Cpu, 
   Globe, 
+  Cloud,
   Mail, 
   Github, 
   Linkedin, 
@@ -32,6 +33,7 @@ const TypewriterTerminal = () => {
   stack: {
     frontend: ["React", "Next.js", "Flutter"],
     backend: ["Laravel", ".NET", "Node.js"],
+    cloud: ["AWS", "Digital Ocean"],
     immersive: ["UE5", "Three.js", "Blender", "SketchUp Pro"]
   },
   tagline: "Bridging imagination & reality"
@@ -72,7 +74,7 @@ const TypewriterTerminal = () => {
             .replace(/true|false/g, '<span class="text-[#79C0FF]">$&</span>')
             .replace(/\[|\]|\{|\}/g, '<span class="text-[#E6EDF3]">$&</span>')
             .replace(/:/g, '<span class="text-[#E6EDF3]">:</span>')
-            .replace(/stack|frontend|backend|immersive/g, '<span class="text-[#79C0FF]">$&</span>')
+            .replace(/stack|frontend|backend|cloud|immersive/g, '<span class="text-[#79C0FF]">$&</span>')
         }} />
         <span className="inline-block w-2 h-4 bg-[#238636] ml-1 animate-pulse align-middle"></span>
       </div>
@@ -200,7 +202,7 @@ export default function App() {
             <p className="text-lg md:text-xl text-[#8B949E] max-w-lg leading-relaxed border-l-2 border-[#238636] pl-6">
               "Bridging the gap between <span className="text-white font-medium">imagination</span> and <span className="text-white font-medium">reality</span>."
               <br/>
-              <span className="text-sm mt-2 block opacity-75">Senior Software Engineer & Creative Technologist</span>
+              <span className="text-sm mt-2 block opacity-75">Experienced Software Engineer & Creative Technologist</span>
             </p>
 
             <div className="flex flex-wrap gap-4 pt-2">
@@ -250,6 +252,12 @@ export default function App() {
                     sub="React, Next.js, Tailwind CSS" 
                     icon={Globe} 
                     color="text-[#FF7B72]"
+                />
+                <BentoItem 
+                    title="Cloud & Hosting" 
+                    sub="AWS, Digital Ocean" 
+                    icon={Cloud} 
+                    color="text-[#79C0FF]"
                 />
                  <BentoItem 
                     title="System Design" 
